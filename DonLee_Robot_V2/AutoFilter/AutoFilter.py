@@ -133,7 +133,6 @@ async def cb_navg(bot, update: CallbackQuery):
     text=f"""
 ↪️ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
 🗃️ 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 : {leng}
-📑 𝖳𝗈𝗍𝖺𝗅 𝖯𝖺𝗀𝖾 : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
 👤 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 : {update.from_user.mention}"""
      
     try:
@@ -146,7 +145,6 @@ async def cb_navg(bot, update: CallbackQuery):
 📆 𝖸𝖾𝖺𝗋: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
 🌟 𝖱𝖺𝗍𝗂𝗇𝗀: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
 🗃️ 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 : {leng}
-📑 𝖳𝗈𝗍𝖺𝗅 𝖯𝖺𝗀𝖾 : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
 👤 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 : {update.from_user.mention}
 🖋 𝖲𝗍𝗈𝗋𝗒𝗅𝗂𝗇𝖾: <code>{imdb.get('plot')}</code>""",
                 reply_markup=reply_markup,
@@ -173,7 +171,6 @@ async def cb_navg(bot, update: CallbackQuery):
 📆 𝖸𝖾𝖺𝗋: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
 🌟 𝖱𝖺𝗍𝗂𝗇𝗀: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10
 🗃️ 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 : {leng}
-📑 𝖳𝗈𝗍𝖺𝗅 𝖯𝖺𝗀𝖾 : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
 👤 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 : {update.from_user.mention}
 🖋 𝖲𝗍𝗈𝗋𝗒𝗅𝗂𝗇𝖾: <code>{imdb.get('plot')}</code>""",
                 reply_markup=reply_markup,
